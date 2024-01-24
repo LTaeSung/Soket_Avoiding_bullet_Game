@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--IE문서모드-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <!--viewport(화면 상의 화상 표시 영역) 초기화면 배율 설정-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--시작 페이지 제목-->
+    <title>startPage</title>
+
+    <!--css파일--> 
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="startPage.css">
+
+    <!--script src는 외부 파일 URL연결-->
+    <!--절대 주소--> 
+    <!--crossorigin="anonymous"는 사용자 자격 증명을 보내지 않고 js 스크립트 를 실행하도록 브라우저에 지시-->
+    <script src="https://kit.fontawesome.com/d5ec65f1e9.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9" defer></script>
+    <!--상대 주소-->
+    <script src="startPage.js" defer></script>
+    <script src="header.js" defer></script> <!--header.js파일로 상단바 설정-->
+    <script src="modal.js" defer></script>
+
+    <!--하이퍼링크(href)로 css파일을 들고옴-->
+    <link rel="stylesheet" href="modal.css">
+</head>
+<body>
+    <div id="nav_bar">
+        <!--header.js의 const header = document.getElementById('nav_bar')와 연결-->
+        <!-- 헤더 -->
+    </div>
+    <div class="modal_back">
+        <!--modal.js의 const modalBack = document.querySelector('.modal_back')와 연결-->
+        <!-- 설명 모달 -->
+    </div>
+    <!--localhost:8000 접속 시 닉네임 설정 화면-->
+    <div class="nickname__wrapper" >
+        <div class="second_wrapper">
+            <div class="nickname__discription">게임 내에서 사용하실 닉네임을 입력해주세요. </div>
+            <!--값을 텍스트 형식으로 받는다-->
+            <!--id="enter"를 통해 startPage.js의 var enter = document.getElementById('enter').value와 연결된다-->
+            <!--placeholder은 무엇을 입력해야 하는지 안내하는 문구설정-->
+            <input type="text" class="nickname__input" id="enter" placeholder="최소 2자 ~ 최대 8자">        
+            <button style="cursor: pointer" type="button" class="button" onclick="enterGame()"> 
+                <!--버튼 클릭하면 startPage.js에서 정의한 함수 실행 -- enterGame()-->
+                Enter
+            </button>
+        </div>
+    </div>
+</body>
+</html>

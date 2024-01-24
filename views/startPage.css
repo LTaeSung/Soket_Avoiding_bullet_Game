@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.nickname{
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    border-width: 1px;
+    border-color: black;
+    display: flex;
+}
+
+.nickname__wrapper {
+    display: column;
+    width: 400px;
+    text-align: center;
+
+    box-shadow:  0 0 10px 2px rgba(100 , 100, 100);
+    background-color: #ffffff;
+    
+    border-radius: 10px;
+    
+}
+
+.nickname__wrapper .nickname__discription {
+    /* display: inline-block; */
+    margin-bottom: 10px;
+    vertical-align: middle;
+    
+}
+
+.nickname__wrapper .second_wrapper {
+
+    width: 400px;
+    height: 130px;
+    background-color: #ffffff;
+    
+    border-radius: 1rem;
+
+}
+.nickname__wrapper .second_wrapper .nickname__discription {
+    padding-top: 4%;
+}
+
+.nickname__discription{
+    font-size: 1.1rem;
+}
+
+button{
+    background-color: #eee;
+    color:black;
+    font-family: inherit;
+    border: 2px black solid;
+    border-radius: 10px;
+    padding: 5px 5px;
+    margin: 5px
+}
+
+button:hover{
+    background-color: #9c9f93;
+}
+
+
+
+.nickname__wrapper .second_wrapper .nickname__input {
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 300px;
+    height: 30px;
+}
+
+.nickname__wrapper .confirm {
+    border-radius: 5px;
+    
+
+    height: 25px;
+}
+
+.ranking__list{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    
+}
+
+.ranking__list li{
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+
+.ranking__container {
+    display: column;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    left: 40%;
+    border-radius: 10px;
+    border-width: 2px;
+    background-color: #FF774D;
+    
+}
+

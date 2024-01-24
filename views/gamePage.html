@@ -1,0 +1,61 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>총알 피하기</title>
+
+    <link rel="stylesheet" href="gamePage.css">
+    <link rel="stylesheet" href="header.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9" defer></script>
+    
+    <script src="/socket.io/socket.io.js" defer></script>
+    <script src="keyHandler.js" defer></script>
+    <script src="header.js" defer></script>
+    <script src="https://kit.fontawesome.com/d5ec65f1e9.js" crossorigin="anonymous"></script>
+    <script src="gamePage.js" defer></script>
+    <script src="/views/gameObject" defer></script>
+    <script src="modal.js" defer></script>
+    <link rel="stylesheet" href="modal.css">
+
+</head>
+<body>        
+    <div id='nav_bar'>
+        <!--header.js에서 받아옴-->
+        <!-- 헤더 -->
+    </div>
+    <div class="modal_back">
+        <!--modal.js에서 가져옴-->
+        <!-- 설명 모달 -->
+    </div>
+    <div class="game_container">
+        <!--게임 컨테이너 = 게임화면 + 버튼-->
+        <canvas 
+            id = "myCanvas" 
+            width ='1024' 
+            height = '768'>
+        </canvas>
+        <!--캔버스 = 게임화면-->
+    
+        <div style="text-align: center;">
+            <button 
+                type="button"
+                id="start_btn" onclick="start()">
+                Start
+            </button>
+        </div>
+    </div>
+
+    <audio 
+        controls id="bgm"
+        hidden='true'>
+        
+        <source 
+            src="/views/sounds/InvisibleSizeDown.mp3"
+            type="audio/mp3">
+    </audio>
+    
+</body>
+</html>

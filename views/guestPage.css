@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    
+}
+*{
+    box-sizing: border-box;
+}
+
+
+h4{
+    margin:5px
+}
+
+button{
+    background-color: #eee;
+    color:black;
+    font-family: inherit;
+    border: 2px black solid;
+    border-radius: 10px;
+    padding: 5px 5px;
+    margin: 5px
+}
+
+button:hover{
+    background-color: #9c9fa3;
+}
+
+.comment_container{
+    width: 800px;
+    display: column;
+    /* text-align: center; */
+    box-shadow:  0 0 10px 2px rgba(100 , 100, 100);
+    border-radius: 10px;
+    border-width: 2px;
+    background-color: #ffffff;
+    min-width: 400px;
+}
+
+.comment_count{
+    margin: 10px;
+}
+#comment-input{
+    /* border-radius: 2px; */
+    margin-left: 10px;
+    width: 90%;
+    height: 50px;
+}
+#nickname-input{
+    /* border-radius: 2px; */
+    margin-left: 10px;
+    width: 20%;
+    height: 30px;
+}
+.comments{
+    margin-top: 20px;
+    display: column;
+    border-radius: 10px;
+    border-width: 2px;
+    border : 1px solid; 
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.nickName{
+    margin-left : 5px;
+}
+.contents{
+    margin-left : 5px;
+}
+.date{
+    margin-left : 5px;
+}
+.comment_count{
+    font-weight: bold;
+}
